@@ -1,0 +1,31 @@
+﻿a:link {
+    text-decoration: none;
+    font-size: 14px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-style: normal;
+}
+
+a:hover {
+    font-size: 18px;
+    color: yellow;
+}
+.tb5 {
+    border: 2px solid #456879;
+    border-radius: 10px;
+    height: 22px;
+    width: 230px;
+}
+
+
+.demo-btn1-hover {
+    transition: 0.3s ease all;
+    border: 2px solid transparent;
+}
+
+    .demo-btn1-hover:hover {
+        color: rgb(226, 19, 70);
+        border-color: currentColor; /* Current Color = mevcut text rengi */
+        background-color: #fff;
+    }
+
+              
