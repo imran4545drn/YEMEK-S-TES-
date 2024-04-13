@@ -1,0 +1,80 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Admin.master.cs" Inherits="Admin" %>
+
+
+<!DOCTYPE html>
+
+<head runat="server">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title></title>
+    <link href="Kullanici.css" rel="stylesheet" />
+    
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    
+    <style type="text/css">
+        .auto-style1 {
+            width: 100%;
+        }
+        .auto-style2 {
+            height: 23px;
+        }
+        .auto-style3 {
+            height: 28px;
+        }
+        .auto-style4 {
+            width: 200px;
+            float: left;
+            height: 250px;
+        }
+    </style>
+</head>
+
+<body>
+    <form id="form1" runat="server">
+        <div style="height: 150px; width: 700px; margin-left: 300px; background-color: cadetblue;">
+            <asp:Image ID="Image1" runat="server" Height="154px" ImageUrl="~/Banner foto/giriş.png" Width="705px" />
+        </div>
+        <div style="margin-left: 300px; width: 700px; height: 20px;">&nbsp;</div>
+        
+        
+        <div style="margin-left: 300px; width: 700px; height: 321px;">
+            <div style="background-color:cadetblue; margin-left:0px;" class="auto-style4">
+                <table class="auto-style1">
+                    <tr>
+                        <td>MENÜLER</td>
+                    </tr>
+                    <tr>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td style="border: thin groove #008000;"><a href="Kategoriler.aspx">KATEGORİLER</a></td>
+                    </tr>
+                    <tr>
+                        <td style="border: thin groove #008000;"><a href="Yemekler.aspx">YEMEKLER</a></td>
+                    </tr>
+                    <tr>
+                        <td style="border: thin groove #008000;"><a href="Yorumlar2.aspx">YORUMLAR</a></td>
+                    </tr>
+                    <tr>
+                        <td class="auto-style3" style="border: thin groove #008000;"><a href="Mesajlar.aspx">MESAJLAR</a></td>
+                    </tr>
+                    <tr>
+                        <td style="border: thin groove #008000;"><a href="GununYemegiAdmin.aspx">GÜNÜN YEMEĞİ</a></td>
+                    </tr>
+                    <tr>
+                        <td class="auto-style2" style="border: thin groove #008000;"><a href="Tarifler.aspx">TARİFLER</a></td>
+                    </tr>
+                    <tr>
+                        <td style="border: thin groove #008000;"><a href="HakkımızdaAdmin.aspx">HAKKIMIZDA</a></td>
+                    </tr>
+                </table>
+                <br />
+                <br />
+            </div>
+            <div style="width: 450px; float:left; height:auto; background-color:cadetblue; margin-left:50px;">
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server">
+                </asp:ContentPlaceHolder>
+            </div>
+        </div>
+    </form>
+</body>
